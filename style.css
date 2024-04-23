@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #233067;
+}
+
+.navbar {
+  background-color: #233067;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-menu {
+  display: flex;
+  margin: 8px 0;
+}
+
+.navbar-brand {
+  margin: 5px 48px 5px 32px;
+}
+
+.navbar-expand {
+  margin: auto 32px;
+}
+
+.navbar-toogler {
+  display: none;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.nav-item {
+  list-style: none;
+  margin: auto 20px;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  font-weight: 800;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #4aadff;
+}
+
+main {
+  position: relative;
+  top: 80px;
+  margin: 64px 0;
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 64px;
+}
+
+.profile-side {
+  margin: auto 0;
+}
+
+.profile-side .profile-name {
+  color: #fff;
+  font-size: 60px;
+}
+
+.cta-side {
+  width: max-content;
+  margin-top: 32px;
+}
+
+.btn-cta {
+  display: flex;
+  padding: 8px 24px;
+  background-color: #4aadff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 32px;
+  cursor: pointer;
+  font-weight: 800;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 16px 0 0;
+}
+
+.btn-cta .arrow {
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.btn-cta:hover {
+  color: #233067;
+}
+
+.cta-side-mob {
+  display: none;
+}
+
+.text-blue {
+  color: #4aadff;
+}
+
+.social-side {
+  display: flex;
+  margin-top: 32px;
+}
+
+.soc-icon {
+  margin: 0 16px;
+}
+
+.profile-pic {
+  width: 425px;
+  height: auto;
+}
+
+.about-page {
+  background-color: #b0c5fe;
+  padding: 64px 0;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.about-page .title {
+  font-size: 35px;
+  color: #233067;
+  margin: 0 32px;
+}
+
+.about-page hr {
+  width: 300px;
+  margin: 8px auto 24px;
+  border: 1px solid #233067;
+}
+
+.about-page .about-desc {
+  font-size: 20px;
+  margin: 0 32px;
+  width: 65%;
+  margin: auto;
+}
+
+.tech-page {
+  text-align: center;
+  padding: 64px 0;
+  margin: 0 64px;
+}
+
+.tech-page .title {
+  font-size: 35px;
+  color: #fff;
+  margin: 0 32px;
+}
+
+.tech-page hr {
+  width: 200px;
+  margin: 8px auto 24px;
+  border: 1px solid #b0c5fe;
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 650px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.tech-icon {
+  width: 75px;
+  margin: 24px 16px;
+  height: auto;
+}
+
+.experience-page {
+  background-color: #b0c5fe;
+  padding: 64px 0 64px 0 ;
+  text-align: center;
+}
+
+.experience-page .title {
+  font-size: 35px;
+  color: #233067;
+  margin: 0 32px;
+}
+
+.experience-page hr {
+  width: 200px;
+  margin: 8px auto 24px;
+  border: 1px solid #233067;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 925px;
+  margin: 64px auto;
+}
+
+.ui-project {
+  width: 275px;
+  margin: 24px 16px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-name {
+  font-size: 25px;
+  font-weight: 800;
+  color: #233067;
+  text-decoration: underline;
+}
+
+.project-link {
+  padding: 8px 16px;
+  background-color: #233067;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 16px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #233067;
+  margin-top: 64px;;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Large devices (desktops) */
+@media only screen and (max-width: 1024px) {
+  .profile-side .profile-name {
+    font-size: 50px;
+  }
+
+  .profile-pic {
+    width: 375px;
+    height: auto;
+  }
+  .project {
+ 
+    width: 850px;
+ 
+  }
+  
+  .ui-project {
+    width: 250px;
+ 
+  }
+}
+
+/* Large devices (laptops) */
+@media only screen and (max-width: 992px) {
+  .profile-side .profile-name {
+    font-size: 40px;
+  }
+
+  .profile-pic {
+    width: 350px;
+    height: auto;
+  }
+
+  .project {
+    align-items: center;
+    width: 700px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .ui-project {
+    width: 200px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    z-index: 1;
+  }
+
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-expand {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-toogler {
+    display: block;
+  }
+
+  .nav-item,
+  .nav-link {
+    text-align: center;
+    background-color: #233067;
+  }
+
+  .nav-item {
+    padding: 16px;
+    margin: 0;
+    display: none;
+  }
+
+  .home-page {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-side .profile-name {
+    font-size: 50px;
+  }
+
+  .profile-pic {
+    width: 350px;
+    height: auto;
+  }
+
+  .soc-icon,
+  .cta-side {
+    display: none;
+  }
+
+  .cta-side-mob {
+    display: block;
+    width: max-content;
+    margin: 32px auto;
+  }
+
+  .tech {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+  .project {
+    display: block;
+    width: 300px;
+  }
+
+  .ui-project {
+    width: 300px;
+    margin: auto auto 32px auto;
+  }
+
+  .project-name {
+    font-size: 25px;
+    margin-bottom: 32px;
+  }
+
+  .project1, .project2, .project3 {
+    margin: 64px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 600 and up) */
+@media only screen and (max-width: 600px) {
+  .profile-side .profile-name {
+    font-size: 10vw;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .tech {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 600 and up) */
+@media only screen and (max-width: 600px) {
+  .profile-side .profile-name {
+    font-size: 10vw;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .tech {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 600 and up) */
+@media only screen and (max-width: 450px) {
+  .tech {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+  .project {
+ 
+    width: 250px;
+ 
+  }
+
+  .ui-project {
+    width: 250px;
+   
+  }
+}
