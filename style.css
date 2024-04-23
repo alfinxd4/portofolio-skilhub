@@ -595,6 +595,9 @@ footer {
 
 /* Medium devices (landscape tablets, 600 and up) */
 @media only screen and (max-width: 450px) {
+  .about-page .about-desc {
+    font-size: 16px;
+  }
   .tech {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
