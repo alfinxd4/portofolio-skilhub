@@ -580,7 +580,9 @@ footer {
   .profile-side .profile-name {
     font-size: 10vw;
   }
-
+.about-page .about-desc {
+    font-size: 16px;
+  }
   .profile-pic {
     width: 100%;
     height: auto;
