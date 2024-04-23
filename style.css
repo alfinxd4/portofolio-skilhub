@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
 }
@@ -56,6 +56,30 @@ main {
   margin: 64px 0;
 }
 
+.reveal {
+  position: relative;
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-top {
+  position: relative;
+  transform: translateY(-60px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-top.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .home-page {
   display: flex;
   justify-content: space-around;
@@ -82,18 +106,18 @@ main {
   background-color: #4aadff;
   border: none;
   border-radius: 8px;
-  margin-top: 32px;
   cursor: pointer;
   font-weight: 800;
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  margin: 0 16px 0 0;
+  margin: 32px 16px auto auto;
+
 }
 
 .btn-cta .arrow {
-  margin-left: 16px;
   font-size: 20px;
+  margin: auto auto auto 16px;
 }
 
 .btn-cta:hover {
@@ -124,7 +148,7 @@ main {
 
 .about-page {
   background-color: #b0c5fe;
-  padding: 64px 0;
+  padding: 96px 0;
   margin-top: 64px;
   text-align: center;
 }
@@ -146,6 +170,7 @@ main {
   margin: 0 32px;
   width: 65%;
   margin: auto;
+  line-height: 1.6;
 }
 
 .tech-page {
@@ -182,7 +207,7 @@ main {
 
 .experience-page {
   background-color: #b0c5fe;
-  padding: 64px 0 64px 0 ;
+  padding: 64px 0 64px 0;
   text-align: center;
 }
 
@@ -198,18 +223,28 @@ main {
   border: 1px solid #233067;
 }
 
-.project {
+.project,
+.certificate {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 925px;
+  width: 950px;
   margin: 64px auto;
 }
 
-.ui-project {
+.ui-project,
+.certif-img {
   width: 275px;
-  margin: 24px 16px;
+  margin: 48px 0px;
   height: auto;
   border-radius: 8px;
+  filter: brightness(85%);
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.ui-project:hover,
+.certif-img:hover {
+  transform: scale(1.110);
 }
 
 .project-name {
@@ -226,15 +261,137 @@ main {
   font-weight: 800;
   text-decoration: none;
   border-radius: 16px;
+  margin-top: 60px;
 }
+
+.gallery-page {
+  background-color: #233067;
+  padding: 64px 0 64px 0;
+  text-align: center;
+}
+
+.gallery-page .title {
+  font-size: 35px;
+  color: #fff;
+  margin: 0 32px;
+}
+
+.gallery-page hr {
+  width: 200px;
+  margin: 8px auto 24px;
+  border: 1px solid #fff;
+}
+
+.certif-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: underline;
+  margin: auto;
+}
+
+.certif-link {
+  padding: 8px 16px;
+  background-color: #b0c5fe;
+  color: #233067;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+.contact-page {
+  text-align: center;
+  padding: 64px 0;
+  background-color: #b0c5fe;
+}
+
+.contact-page .title {
+  font-size: 35px;
+  color: #233067;
+  margin: 0 32px;
+}
+
+.contact-page .sub-title {
+  font-size: 20px;
+  color: #233067;
+  margin: 32px auto;
+  width: 350px;
+
+}
+
+.contact-page hr {
+  width: 200px;
+  margin: 8px auto 24px;
+  border: 1px solid #233067;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 64px;
+  cursor: pointer;
+}
+
+.email-contact,
+.whatsapp-contact,
+.office-contact {
+  background-color: #233067;
+  margin: 0 24px;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: left;
+  transition: 1.5s;
+}
+
+.email-contact:hover,
+.whatsapp-contact:hover,
+.office-contact:hover {
+  transform: scale(1.050);
+}
+
+.contact-title {
+  margin: 16px 0 8px 0;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+}
+
+.email-ico,
+.whatsapp-ico,
+.office-ico {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+
+.contact-fill {
+  margin: 0 0 32px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn-contact {
+  text-decoration: none;
+  font-weight: 800;
+  padding: 8px 32px;
+  background-color: #b0c5fe;
+  color: #233067;
+  border-radius: 20px;
+  
+}
+
 
 footer {
   position: relative;
   bottom: 0;
   background-color: #233067;
-  margin-top: 64px;;
+  margin-top: 64px auto;
+  text-align: center;
+  padding:16px 0;
   color: #fff;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 16px;
 }
 
 /* Large devices (desktops) */
@@ -247,15 +404,16 @@ footer {
     width: 375px;
     height: auto;
   }
-  .project {
- 
+
+  .project,
+  .certificate {
     width: 850px;
- 
   }
-  
-  .ui-project {
+
+  .ui-project,
+  .certif-img {
     width: 250px;
- 
+
   }
 }
 
@@ -270,7 +428,8 @@ footer {
     height: auto;
   }
 
-  .project {
+  .project,
+  .certificate {
     align-items: center;
     width: 700px;
   }
@@ -279,8 +438,25 @@ footer {
     font-size: 20px;
   }
 
-  .ui-project {
+  .certif-name {
+    font-size: 16px;
+  }
+
+  .ui-project,
+  .certif-img {
     width: 200px;
+  }
+
+  .contact {
+    display: block;
+    width: 300px;
+    margin: auto;
+  }
+
+  .email-contact,
+  .whatsapp-contact,
+  .office-contact {
+    margin: 32px 0;
   }
 }
 
@@ -345,12 +521,15 @@ footer {
     justify-items: center;
     width: 100%;
   }
-  .project {
+
+  .project,
+  .certificate {
     display: block;
     width: 300px;
   }
 
-  .ui-project {
+  .ui-project,
+  .certif-img {
     width: 300px;
     margin: auto auto 32px auto;
   }
@@ -360,7 +539,17 @@ footer {
     margin-bottom: 32px;
   }
 
-  .project1, .project2, .project3 {
+  .certif-name {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+
+  .project1,
+  .project2,
+  .project3,
+  .certif1,
+  .certif2,
+  .certif3 {
     margin: 64px 0;
   }
 }
@@ -408,14 +597,24 @@ footer {
     justify-items: center;
     width: 100%;
   }
-  .project {
- 
+
+  .project,
+  .certificate {
+
     width: 250px;
- 
+
   }
 
-  .ui-project {
+  .ui-project,
+  .certif-img {
     width: 250px;
-   
+
   }
+
+  .contact-page .sub-title {
+    width: 100%;
+
+  }
+
+  
 }
