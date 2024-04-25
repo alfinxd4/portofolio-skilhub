@@ -1,18 +1,38 @@
- const btn = document.querySelector(".navbar-toogler");
+const btn = document.querySelector(".navbar-toogler");
 const menu = document.querySelectorAll(".nav-item");
+
+const hamburger = document.querySelector(".menu");
+
 
 menu.forEach(item => {
 
     btn.addEventListener('click', () => {
         if (item.style.display == 'none') {
             item.style.display = 'block';
+            hamburger.classList.remove("fa-bars");
+            hamburger.classList.add("fa-xmark");
+            
+    item.addEventListener('click',()=>{
+        let clicked=true;
+        if (clicked==true) {
+            menu.forEach(item=>{
+                    item.style.display = 'none';
+            hamburger.classList.remove("fa-xmark");
+            hamburger.classList.add("fa-bars");
+            })
+        }
+    
+    })
+               
         } else {
             item.style.display = 'none';
+            hamburger.classList.remove("fa-xmark");
+            hamburger.classList.add("fa-bars");
         }
     })
-
 });
 
+ 
 // reveal animation
 const reveal = () => {
     const reveals = document.querySelectorAll(".reveal");
