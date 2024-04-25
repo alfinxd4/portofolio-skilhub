@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
+    <title>Alfiansyah's Portofolio</title>
+    <!-- stylesheet .css -->
     <link rel="stylesheet" href="style.css">
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/c8105c8ce4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- start nav -->
     <nav class="navbar">
         <ul class="navbar-menu">
@@ -19,35 +19,35 @@
                 <!-- logo -->
                 <li class="navbar-brand">
                     <a href="index.html">
-                        <img class="navbar-icon" src="assets/logo.png" alt="log" width="50">
+                        <img class="navbar-icon" src="assets/logo.png" alt="logo" width="50">
                     </a>
                 </li>
-                <!-- menu-expand -->
+                <!-- navbar-toogler -->
                 <li class="navbar-toogler">
-                    <img src="assets/hamburger.png" alt="" width="35">
+                    <i class="fa-solid fa-bars menu"></i>
                 </li>
             </div>
-            <!--  -->
+            <!-- home -->
             <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
             </li>
-            <!--  -->
+            <!-- about -->
             <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
             </li>
-            <!--  -->
+            <!-- skills -->
             <li class="nav-item">
                 <a class="nav-link" href="#tech">Skills</a>
             </li>
-            <!--  -->
+            <!-- projects -->
             <li class="nav-item">
                 <a class="nav-link" href="#experience">Projects</a>
             </li>
-             <!--  -->
-             <li class="nav-item">
-                <a class="nav-link" href="#gallery">Certificates</a>
+            <!-- certificates -->
+            <li class="nav-item">
+                <a class="nav-link" href="#certificates">Certificates</a>
             </li>
-            <!--  -->
+            <!-- contact -->
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -61,47 +61,47 @@
         <div class="home-page" id="home">
             <!-- profile-side -->
             <div class="profile-side">
-                <!-- name -->
+                <!-- profile-name -->
                 <h1 class="profile-name">
                     <span class="text-blue">Hi,</span><br>
                     I'm <span class="text-blue">Alfiansyah</span><br>
                     Jr. Web Developer
                 </h1>
-                <!-- cta -->
+                <!-- c -->
                 <div class="cta-side">
-                    <a class="btn-cta" href="#about">
-                        <span>See More</span>
+                    <a class="btn-cta" href="https:wa.me/6285819727856">
+                        <span>Let's Talk!</span>
                         <i class="fa-solid fa-arrow-right arrow"></i>
                     </a>
                 </div>
-                <!-- social -->
+                <!-- my-social-media -->
                 <div class="social-side">
                     <!-- linkedin -->
                     <a href="https://www.linkedin.com/in/alfiansyah-cahyo-wicaksono/">
-                        <img class="soc-icon" src="assets/icon/linkedin.png" alt="linkedin" width="50">
+                        <img class="social-icon" src="assets/icon/linkedin.png" alt="linkedin" width="50">
                     </a>
                     <!-- whatsapp -->
                     <a href="https://wa.me/6285819727856">
-                        <img class="soc-icon" src="assets/icon/wa.png" alt="whatsapp" width="50">
+                        <img class="social-icon" src="assets/icon/wa.png" alt="whatsapp" width="50">
                     </a>
                     <!-- instagram -->
                     <a href="https://www.instagram.com/finnnporto/">
-                        <img class="soc-icon" src="assets/icon/ig.png" alt="instagram" width="50">
+                        <img class="social-icon" src="assets/icon/ig.png" alt="instagram" width="50">
                     </a>
                     <!-- github -->
                     <a href="https://github.com/alfinxd4/">
-                        <img class="soc-icon" src="assets/icon/github.png" alt="github" width="50">
+                        <img class="social-icon" src="assets/icon/github.png" alt="github" width="50">
                     </a>
                 </div>
             </div>
-            <!-- picture-side -->
+            <!-- picture-profile -->
             <div class="picture-side">
                 <img class="profile-pic" src="assets/profile.png" alt="profile-picture">
             </div>
-            <!-- cta -->
-            <div class="cta-side-mob">
-                <a class="btn-cta" href="#about">
-                    <span>See More</span>
+            <!-- cta-side-mobile -->
+            <div class="cta-side-mobile">
+                <a class="btn-cta" href="https://wa.me/6285819727856">
+                    <span>Let's Talk!</span>
                     <i class="fa-solid fa-arrow-right arrow"></i>
                 </a>
             </div>
@@ -110,10 +110,10 @@
         <div class="about-page" id="about">
             <!-- title -->
             <div class="reveal-top">
-                <h2 class="title ">About Me</h2>
+                <h2 class="title">About Me</h2>
                 <hr>
             </div>
-            <!-- desscription -->
+            <!-- description -->
             <p class="about-desc reveal">Graduated from a vocational school majoring in Software Engineering and is
                 currently
                 an active student of the Information Management study program who has expertise in the field of website
@@ -121,14 +121,13 @@
                 certified training and create several mini projects to improve programming skills. Has BNSP standard
                 certification in the field of Junior Web Developer</p>
         </div>
-        <!-- tech-page -->
+        <!-- skills-page -->
         <div class="tech-page" id="tech">
             <!-- title -->
             <div class="reveal-top">
                 <h2 class="title">Skills</h2>
                 <hr>
             </div>
-
             <!-- tech -->
             <div class="tech">
                 <!--  bootstap-->
@@ -165,32 +164,36 @@
                 <h2 class="title">Latest Projects</h2>
                 <hr>
             </div>
-
             <div class="project">
                 <!--  -->
-                <div class="project1">
-                    <p class="project-name reveal-top ">Indonesian Tourism</p>
-                    <div class="reveal">
+                <div class="project1 reveal-top">
 
+                    <div class="">
                         <img class="ui-project  " src="assets/project/tourismapp.png" alt="tourism-app">
+                        <p class="project-name">Indonesian Tourism</p>
+                        <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem est sequi magnam! Pariatur aspernatur quae, ipsa assumenda culpa vel nisi blanditiis fuga numquam impedit tempore error repellat, est hic mollitia.</p>
                         <a class="project-link      " href="https://alfinxd4.github.io/indonesian-tourism/">See
                             Project</a>
                     </div>
                 </div>
                 <!--  -->
-                <div class="project2">
-                    <p class="project-name reveal-top">To-Do App</p>
-                    <div class="reveal">
+                <div class="project2 reveal-top">
+                    <div class="">
                         <img class="ui-project  " src="assets/project/todoapp.png" alt="todo-app">
+                        <p class="project-name">To-Do App</p>
+                        <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem est sequi magnam! Pariatur aspernatur quae, ipsa assumenda culpa vel nisi blanditiis fuga numquam impedit tempore error repellat, est hic mollitia.</p>
+
                         <a class="project-link  " href="https://alfinxd4.github.io/todo-app/">See Project</a>
                     </div>
                 </div>
 
                 <!--  -->
-                <div class="project3">
-                    <p class="project-name reveal-top">Convertor Tools</p>
-                    <div class="reveal">
+                <div class="project3 reveal-top">
+                    <div class="">
                         <img class="ui-project  " src="assets/project/converterapp.png" alt="converter-app">
+                        <p class="project-name">Convertor Tools</p>
+                                                <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem est sequi magnam! Pariatur aspernatur quae, ipsa assumenda culpa vel nisi blanditiis fuga numquam impedit tempore error repellat, est hic mollitia.</p>
+
                         <a class="project-link  " href="https://alfinxd4.github.io/converter-tools/   ">See Project</a>
                     </div>
                 </div>
@@ -199,45 +202,71 @@
         </div>
 
 
-        <!-- gallery -->
-        <div class="gallery-page" id="gallery">
+        <!-- certificate -->
+        <div class="certificates-page" id="certificates">
             <!-- title -->
             <div class="reveal">
                 <h2 class="title">Certificates</h2>
                 <hr>
             </div>
+            <!-- documentation certificate -->
             <div class="certificate">
-                <!--  -->
+                <!-- certif 1-->
                 <div class="certif1">
-                    <p class="certif-name reveal-top ">Web-Dev Skilvul</p>
-                    <div class="reveal">
+                    <p class="certif-name reveal-top ">Skilvul</p>
+                    <div class="certif reveal">
                         <img class="certif-img  " src="assets/certif/skilvul.png">
-                        <a class="certif-link      " href="https://badgr.com/public/assertions/InWnyXPqT6mcxMOORd0wkA?identity__email=alfinxd4@gmail.com">More Info</a>
+                        <a class="certif-link      "
+                            href="https://badgr.com/public/assertions/InWnyXPqT6mcxMOORd0wkA?identity__email=alfinxd4@gmail.com">Documentation</a>
                     </div>
                 </div>
-                <!--  -->
+                <!-- certif2 -->
                 <div class="certif2">
-                    <p class="certif-name reveal-top">Front-End Web Dicoding</p>
-                    <div class="reveal">
+                    <p class="certif-name reveal-top">Dicoding</p>
+                    <div class="certif reveal">
                         <img class="certif-img  " src="assets/certif/dicoding.png">
-                        <a class="certif-link  " href="https://www.dicoding.com/certificates/NVP778M4WPR0">More Info</a>
+                        <a class="certif-link  "
+                            href="https://www.dicoding.com/certificates/NVP778M4WPR0">Documentation</a>
                     </div>
                 </div>
-
-                <!--  -->
+                <!-- certif3 -->
                 <div class="certif3">
-                    <p class="certif-name reveal-top">Jr. Web Developer BNSP</p>
-                    <div class="reveal">
-                        <img class="certif-img  " src="assets/certif/bnsp.png">
-                        <a class="certif-link  " href="https://www.linkedin.com/in/alfiansyah-cahyo-wicaksono/details/education/1635547304384/single-media-viewer/?profileId=ACoAADHb8b4BhUzj9N3H826FIZIO4Bd_s4pPVkE ">More Info</a>
+                    <p class="certif-name reveal-top">CodingStudio</p>
+                    <div class="certif reveal">
+                        <img class="certif-img  " src="assets/certif/codingstudio.png">
+                        <a class="certif-link  "
+                            href="https://codingstudio.id/certificate/75A93CC25E-759D519D66-759D515139/">Documentation</a>
                     </div>
                 </div>
-
+                <!-- certif4 -->
+                <div class="certif4">
+                    <p class="certif-name reveal-top">KursusDigital</p>
+                    <div class="certif reveal">
+                        <img class="certif-img  " src="assets/certif/kursusdigital.png">
+                        <a class="certif-link  "
+                            href="https://kursusdigital.id/sertifikat/d5540c6206e4f774b9388f23fc0133cf/">Documentation</a>
+                    </div>
+                </div>
+                <!-- certif5 -->
+                <div class="certif5">
+                    <p class="certif-name reveal-top">FreeCodeCamp</p>
+                    <div class="certif reveal">
+                        <img class="certif-img  " src="assets/certif/fcc.png">
+                        <a class="certif-link  "
+                            href="https://www.freecodecamp.org/certification/alfinxd4/responsive-web-design">Documentation</a>
+                    </div>
+                </div>
+                <!-- certif6 -->
+                <div class="certif6">
+                    <p class="certif-name reveal-top">Professional Certification</p>
+                    <div class="certif reveal">
+                        <img class="certif-img  " src="assets/certif/bnsp.png">
+                        <a class="certif-link  "
+                            href="https://www.linkedin.com/in/alfiansyah-cahyo-wicaksono/details/education/1635547304384/single-media-viewer/?profileId=ACoAADHb8b4BhUzj9N3H826FIZIO4Bd_s4pPVkE ">Documentation</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
 
         <!-- contact-page -->
         <div class="contact-page" id="contact">
@@ -247,32 +276,53 @@
                 <hr>
             </div>
             <div class="reveal-top">
+                <!-- sub-title -->
                 <p class="sub-title">Let's partner up! Get in touch and let us know how we can help</p>
+                <!-- contact-icon -->
+                <div class="contact-icon">
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/alfiansyah-cahyo-wicaksono/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <!-- whatsapp -->
+                    <a href="https://wa.me/6285819727856">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/finnnporto/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- github -->
+                    <a href="https://github.com/alfinxd4/">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
+            <!-- contact-info -->
             <div class="contact">
+                <!-- email -->
                 <div class="email-contact reveal">
                     <i class="fa-solid fa-envelope email-ico"></i>
                     <p class="contact-title">Email</p>
-                    <p class="contact-fill">alfinxd4@gmail.com</p>
+                    <p class="contact-info">alfinxd4@gmail.com</p>
                     <a class="btn-contact" href="mailto:alfinxd4@gmail.com">Contact</a>
                 </div>
+                <!-- whatsapp -->
                 <div class="whatsapp-contact reveal">
                     <i class="fa-solid fa-phone  whatsapp-ico"></i>
                     <p class="contact-title">Whatsapp</p>
-                    <p class="contact-fill">(+62)858-1972-7856</p>
+                    <p class="contact-info">(+62)858-1972-7856</p>
                     <a class="btn-contact" href="wa.me/6285819727856">Call</a>
                 </div>
+                <!-- address -->
                 <div class="office-contact reveal">
                     <i class="fa-solid fa-location-dot  office-ico"></i>
                     <p class="contact-title">Office</p>
-                    <p class="contact-fill">Bogor Regency, Indonesia</p>
+                    <p class="contact-info">Bogor Regency, Indonesia</p>
                     <a class="btn-contact" href="https://maps.app.goo.gl/UkwEtp1aV8Nfvaxr9">Location</a>
                 </div>
             </div>
         </div>
-
-
-
     </main>
     <!-- end main -->
 
