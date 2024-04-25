@@ -34,6 +34,11 @@ body {
   cursor: pointer;
 }
 
+.navbar-toogler i {
+  color: #fff;
+  font-size: 30px;
+}
+
 .nav-item {
   list-style: none;
   margin: auto 20px;
@@ -124,7 +129,7 @@ main {
   color: #233067;
 }
 
-.cta-side-mob {
+.cta-side-mobile {
   display: none;
 }
 
@@ -137,7 +142,7 @@ main {
   margin-top: 32px;
 }
 
-.soc-icon {
+.social-icon {
   margin: 0 16px;
 }
 
@@ -152,6 +157,7 @@ main {
   margin-top: 64px;
   text-align: center;
 }
+
 
 .about-page .title {
   font-size: 35px;
@@ -175,7 +181,7 @@ main {
 
 .tech-page {
   text-align: center;
-  padding: 64px 0;
+  padding: 96px 0;
   margin: 0 64px;
 }
 
@@ -207,14 +213,16 @@ main {
 
 .experience-page {
   background-color: #b0c5fe;
-  padding: 64px 0 64px 0;
+  padding: 96px 0 64px 0;
   text-align: center;
+  width: 100%;
 }
 
 .experience-page .title {
   font-size: 35px;
   color: #233067;
   margin: 0 32px;
+
 }
 
 .experience-page hr {
@@ -223,65 +231,102 @@ main {
   border: 1px solid #233067;
 }
 
-.project,
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 850px;
+  margin: 0 auto;
+}
 .certificate {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 950px;
-  margin: 64px auto;
+  width: 850px;
+  margin: 0 auto;
+}
+.certif1, .certif2, .certif3, .certif4, .certif5, .certif6 {
+  margin: 0 16px;
+}
+.project1, .project2, .project3, .project4, .project5, .project6 {
+   background-color: #233067;
+   margin: 0 16px;
+   width: 250px;
+     border-radius: 8px;
+     height: 520px;
 }
 
-.ui-project,
 .certif-img {
   width: 275px;
-  margin: 48px 0px;
+  display: block;
+  padding: 16px 0px 32px 0px;
   height: auto;
   border-radius: 8px;
   filter: brightness(85%);
   cursor: pointer;
   transition: 1.5s;
+  margin: auto;
+}
+.ui-project {
+  width: 250px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  filter: brightness(85%);
+  cursor: pointer;
+  margin: 0;
+  transition: 1.5s;
 }
 
-.ui-project:hover,
-.certif-img:hover {
+
+.project1:hover , .project2:hover , .project3:hover , .project4:hover , .project5:hover , .project6:hover  ,.certif-img:hover {
   transform: scale(1.110);
 }
 
 .project-name {
-  font-size: 25px;
+  font-size: 20px;
+  margin: 16px 0;
   font-weight: 800;
-  color: #233067;
-  text-decoration: underline;
+  color: #fff ;
 }
-
+.project-desc{
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  margin: 0 16px 32px 16px;
+}
 .project-link {
   padding: 8px 16px;
-  background-color: #233067;
+  background-color: #4aadff;
   color: #fff;
   font-weight: 800;
   text-decoration: none;
   border-radius: 16px;
-  margin-top: 60px;
 }
 
-.gallery-page {
+.certificates-page {
   background-color: #233067;
-  padding: 64px 0 64px 0;
+  padding: 96px 0 64px 0;
   text-align: center;
 }
 
-.gallery-page .title {
+.certificates-page .title {
   font-size: 35px;
   color: #fff;
   margin: 0 32px;
 }
 
-.gallery-page hr {
+.certificates-page hr {
   width: 200px;
   margin: 8px auto 24px;
   border: 1px solid #fff;
 }
-
+.certif{
+    margin: 16px auto 32px auto;
+}
+.tech, .certificate,.project {
+  margin-top: 64px;
+}
+.certif1, .certif2, .certif3, .certif4, .certif5,.certif6 {
+  margin-bottom: 32px;
+}
 .certif-name {
   font-size: 20px;
   font-weight: 800;
@@ -289,7 +334,7 @@ main {
   text-decoration: underline;
   margin: auto;
 }
-
+ 
 .certif-link {
   padding: 8px 16px;
   background-color: #b0c5fe;
@@ -299,10 +344,9 @@ main {
   border-radius: 16px;
   margin-top: 60px;
 }
-
 .contact-page {
   text-align: center;
-  padding: 64px 0;
+  padding: 96px 0;
   background-color: #b0c5fe;
 }
 
@@ -315,9 +359,20 @@ main {
 .contact-page .sub-title {
   font-size: 20px;
   color: #233067;
-  margin: 32px auto;
+  margin: 32px auto 16px auto;
   width: 350px;
 
+}
+
+.contact-icon a {
+  text-decoration: none;
+  color: #233067;
+}
+
+.contact-icon i {
+  font-size: 30px;
+  margin: 0 12px;
+  cursor: pointer;
 }
 
 .contact-page hr {
@@ -365,7 +420,7 @@ main {
   font-size: 25px;
 }
 
-.contact-fill {
+.contact-info {
   margin: 0 0 32px 0;
   font-size: 16px;
   color: #fff;
@@ -378,8 +433,9 @@ main {
   background-color: #b0c5fe;
   color: #233067;
   border-radius: 20px;
-  
+
 }
+
 
 
 footer {
@@ -388,7 +444,7 @@ footer {
   background-color: #233067;
   margin-top: 64px auto;
   text-align: center;
-  padding:16px 0;
+  padding: 16px 0;
   color: #fff;
   font-weight: 800;
   font-size: 16px;
@@ -405,15 +461,13 @@ footer {
     height: auto;
   }
 
-  .project,
-  .certificate {
-    width: 850px;
-  }
-
-  .ui-project,
+.ui-project {
+  width: 250px;
+  margin: 0;
+}
   .certif-img {
     width: 250px;
-
+    margin: auto;
   }
 }
 
@@ -428,7 +482,10 @@ footer {
     height: auto;
   }
 
-  .project,
+  .project{
+    width: 700px;
+    margin: 64px auto;
+  }
   .certificate {
     align-items: center;
     width: 700px;
@@ -441,22 +498,28 @@ footer {
   .certif-name {
     font-size: 16px;
   }
-
-  .ui-project,
-  .certif-img {
+  .project1, .project2, .project3, .project4, .project5, .project6 {
+    margin: 0 16px;
+    width: 200px;
+ 
+ }
+  .ui-project{
     width: 200px;
   }
-
-  .contact {
-    display: block;
-    width: 300px;
-    margin: auto;
+  .certif-img {
+    width: 200px;
   }
 
   .email-contact,
   .whatsapp-contact,
   .office-contact {
-    margin: 32px 0;
+    margin: 32px 12px ;
+  }
+  .contact-title {
+    font-size:16px;
+  }
+  .contact-info {
+    font-size: 12px;
   }
 }
 
@@ -465,6 +528,7 @@ footer {
   main {
     margin-top: 0;
   }
+
   .navbar {
     z-index: 1;
   }
@@ -508,15 +572,15 @@ footer {
     height: auto;
   }
 
-  .soc-icon,
+  .social-icon,
   .cta-side {
     display: none;
   }
 
-  .cta-side-mob {
+  .cta-side-mobile {
     display: block;
     width: max-content;
-    margin: 32px auto;
+    margin: 64px auto;
   }
 
   .tech {
@@ -525,18 +589,24 @@ footer {
     width: 100%;
   }
 
-  .project,
-  .certificate {
+  .project{
     display: block;
-    width: 300px;
+    margin: 64px auto;
+    width: 420px;
   }
 
-  .ui-project,
-  .certif-img {
-    width: 300px;
-    margin: auto auto 32px auto;
+  .project1, .project2, .project3, .project4, .project5, .project6 {
+    margin: 64px auto;
+    width: 375px;
+    height: 650px;
+ }
+  .ui-project{
+    width: 375px;
   }
 
+
+
+  
   .project-name {
     font-size: 25px;
     margin-bottom: 32px;
@@ -544,45 +614,40 @@ footer {
 
   .certif-name {
     font-size: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+  }
+  .certificate {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 64px;
+  }
+  .certif-img {
+    width: 250px;
   }
 
-  .project1,
-  .project2,
-  .project3,
-  .certif1,
-  .certif2,
-  .certif3 {
-    margin: 64px 0;
+   .contact {
+    display: block;
+    margin: 0 32px;
+  }
+  .email-contact,
+  .whatsapp-contact,
+  .office-contact {
+    margin: 32px auto;
   }
 }
 
-/* Medium devices (landscape tablets, 600 and up) */
+
+
+
 @media only screen and (max-width: 600px) {
   .profile-side .profile-name {
     font-size: 10vw;
   }
 
-  .profile-pic {
-    width: 100%;
-    height: auto;
-  }
-
-  .tech {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    width: 100%;
-  }
-}
-
-/* Medium devices (landscape tablets, 600 and up) */
-@media only screen and (max-width: 600px) {
-  .profile-side .profile-name {
-    font-size: 10vw;
-  }
   .about-page .about-desc {
     font-size: 16px;
   }
+
   .profile-pic {
     width: 100%;
     height: auto;
@@ -593,13 +658,24 @@ footer {
     justify-items: center;
     width: 100%;
   }
+  .certificate {
+    display: block;
+    width: 100%;
+  }
+  .certif1, .certif2, .certif3, .certif4, .certif5,.certif6 {
+    margin-bottom: 64px;
+  }
+  .certif-img {
+    width: 300px;
+  }
 }
 
-/* Medium devices (landscape tablets, 600 and up) */
+
 @media only screen and (max-width: 450px) {
   .profile-side .profile-name {
     font-size: 7vw;
   }
+
   .about-page .about-desc {
     font-size: 16px;
   }
@@ -610,22 +686,37 @@ footer {
     width: 100%;
   }
 
-  .project,
-  .certificate {
+  .tech-icon {
+    width: 60px;
+  }
 
+  .certificate {
     width: 250px;
 
   }
 
-  .ui-project,
+  .project{
+    width: 100%;
+  }
+
+  .project1, .project2, .project3, .project4, .project5, .project6 {
+    width: 275PX;
+    height: 650px;
+ }
+  .ui-project{
+    width: 275px;
+  }
+
+  .certificate {
+    display: block;
+    width: 100%;
+  }
   .certif-img {
     width: 250px;
-
   }
-
   .contact-page .sub-title {
     width: auto;
-    margin: 0 64px;
+    margin: 0 64px 16px 64px;
   }
 
   footer {
