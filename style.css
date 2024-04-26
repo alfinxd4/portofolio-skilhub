@@ -1,39 +1,38 @@
+ /* font-family QuickSand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* selector all-page */
 * {
   margin: 0;
   padding: 0;
 }
 
- 
- .zoom-in-out-box {
-  /* Apply animation named 'zoom-in-zoom-out' with duration of 1 second, easing effect, and infinite repetition */
+body {
+  background-color: #233067;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* animation zoom in zoom out */
+.zoom-in-out-box {
   animation: zoom-in-zoom-out 1s ease infinite;
 }
 
 /* Keyframes for the zoom in zoom out animation */
 @keyframes zoom-in-zoom-out {
-  /* At the beginning of the animation */
   0% {
-    /* Scale the element to its original size */
     transform: scale(1, 1);
   }
-  /* At the middle of the animation */
+
   50% {
-    /* Scale the element to 1.5 times its original size */
     transform: scale(1.07, 1.07);
   }
-  /* At the end of the animation */
+
   100% {
-    /* Scale the element back to its original size */
     transform: scale(1, 1);
   }
 }
 
- 
-  
-body {
-  background-color: #233067;
-}
-
+/* navbar-style */
 .navbar {
   background-color: #233067;
   width: 100%;
@@ -47,12 +46,12 @@ body {
   margin: 8px 0;
 }
 
-.navbar-brand {
-  margin: 5px 48px 5px 32px;
-}
-
 .navbar-expand {
   margin: auto 32px;
+}
+
+.navbar-brand {
+  margin: 5px 48px 5px 32px;
 }
 
 .navbar-toogler {
@@ -61,7 +60,7 @@ body {
   cursor: pointer;
 }
 
-.navbar-toogler i {
+.navbar-toogler .menu {
   color: #fff;
   font-size: 30px;
 }
@@ -82,6 +81,7 @@ body {
   color: #4aadff;
 }
 
+/* main-styles */
 main {
   position: relative;
   top: 80px;
@@ -93,6 +93,11 @@ main {
   transform: translateX(-60px);
   opacity: 0;
   transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .reveal-top {
@@ -107,19 +112,15 @@ main {
   opacity: 1;
 }
 
-.reveal.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-
+/* home-page-style */
 .home-page {
   display: flex;
   justify-content: space-around;
-  margin: 32px 64px;
+  margin: 0px 64px;
 }
 
 .profile-side {
-  margin: auto 0;
+  margin: 0;
 }
 
 .profile-side .profile-name {
@@ -127,9 +128,12 @@ main {
   font-size: 60px;
 }
 
+.text-blue {
+  color: #4aadff;
+}
+
 .cta-side {
   width: max-content;
-  margin-top: 32px;
 }
 
 .btn-cta {
@@ -156,14 +160,6 @@ main {
   color: #233067;
 }
 
-.cta-side-mobile {
-  display: none;
-}
-
-.text-blue {
-  color: #4aadff;
-}
-
 .social-side {
   display: flex;
   margin-top: 32px;
@@ -178,13 +174,17 @@ main {
   height: auto;
 }
 
+.cta-side-mobile {
+  display: none;
+}
+
+/* about-page-style */
 .about-page {
   background-color: #b0c5fe;
   padding: 96px 0;
   margin-top: 64px;
   text-align: center;
 }
-
 
 .about-page .title {
   font-size: 35px;
@@ -206,6 +206,7 @@ main {
   line-height: 1.6;
 }
 
+/* tech/skills-page style */
 .tech-page {
   text-align: center;
   padding: 96px 0;
@@ -238,21 +239,22 @@ main {
   height: auto;
 }
 
-.experience-page {
+/* projects-page-style */
+.projects-page {
   background-color: #b0c5fe;
   padding: 96px 0 64px 0;
   text-align: center;
   width: 100%;
 }
 
-.experience-page .title {
+.projects-page .title {
   font-size: 35px;
   color: #233067;
   margin: 0 32px;
 
 }
 
-.experience-page hr {
+.projects-page hr {
   width: 200px;
   margin: 8px auto 24px;
   border: 1px solid #233067;
@@ -264,34 +266,21 @@ main {
   width: 850px;
   margin: 0 auto;
 }
-.certificate {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 850px;
-  margin: 0 auto;
-}
-.certif1, .certif2, .certif3, .certif4, .certif5, .certif6 {
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+  background-color: #233067;
   margin: 0 16px;
-}
-.project1, .project2, .project3, .project4, .project5, .project6 {
-   background-color: #233067;
-   margin: 0 16px;
-   width: 250px;
-     border-radius: 8px;
-     height: 520px;
+  width: 250px;
+  border-radius: 8px;
+  height: 520px;
 }
 
-.certif-img {
-  width: 275px;
-  display: block;
-  padding: 16px 0px 32px 0px;
-  height: auto;
-  border-radius: 8px;
-  filter: brightness(85%);
-  cursor: pointer;
-  transition: 1.5s;
-  margin: auto;
-}
+
 .ui-project {
   width: 250px;
   height: auto;
@@ -303,7 +292,13 @@ main {
 }
 
 
-.project1:hover , .project2:hover , .project3:hover , .project4:hover , .project5:hover , .project6:hover  ,.certif-img:hover {
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover,
+.certif-img:hover {
   transform: scale(1.110);
 }
 
@@ -311,15 +306,17 @@ main {
   font-size: 20px;
   margin: 16px 0;
   font-weight: 800;
-  color: #fff ;
+  color: #fff;
 }
-.project-desc{
+
+.project-desc {
   font-size: 16px;
   color: #fff;
   text-align: left;
   margin: 0 16px 32px 16px;
   height: 120px;
 }
+
 .project-link {
   padding: 8px 16px;
   background-color: #4aadff;
@@ -328,6 +325,9 @@ main {
   text-decoration: none;
   border-radius: 16px;
 }
+
+/* certificate-page-style */
+
 
 .certificates-page {
   background-color: #233067;
@@ -346,15 +346,34 @@ main {
   margin: 8px auto 24px;
   border: 1px solid #4aadff;
 }
-.certif{
-    margin: 16px auto 32px auto;
+
+
+.certificate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 850px;
+  margin: 0 auto;
 }
-.tech, .certificate,.project {
+
+.tech,
+.certificate,
+.project {
   margin-top: 64px;
 }
-.certif1, .certif2, .certif3, .certif4, .certif5,.certif6 {
-  margin-bottom: 32px;
+
+.certif {
+  margin: 16px auto 32px auto;
 }
+
+.certif1,
+.certif2,
+.certif3,
+.certif4,
+.certif5,
+.certif6 {
+  margin: 16px 0 32px 0;
+}
+
 .certif-name {
   font-size: 20px;
   font-weight: 800;
@@ -362,7 +381,19 @@ main {
   text-decoration: underline;
   margin: auto;
 }
- 
+
+.certif-img {
+  width: 275px;
+  display: block;
+  padding: 16px 0px 32px 0px;
+  height: auto;
+  border-radius: 8px;
+  filter: brightness(85%);
+  cursor: pointer;
+  transition: 1.5s;
+  margin: auto;
+}
+
 .certif-link {
   padding: 8px 16px;
   background-color: #4aadff;
@@ -372,6 +403,8 @@ main {
   border-radius: 16px;
   margin-top: 60px;
 }
+
+/* contact-page-style */
 .contact-page {
   text-align: center;
   padding: 96px 0;
@@ -382,6 +415,12 @@ main {
   font-size: 35px;
   color: #233067;
   margin: 0 32px;
+}
+
+.contact-page hr {
+  width: 200px;
+  margin: 8px auto 24px;
+  border: 1px solid #233067;
 }
 
 .contact-page .sub-title {
@@ -401,12 +440,6 @@ main {
   font-size: 30px;
   margin: 0 12px;
   cursor: pointer;
-}
-
-.contact-page hr {
-  width: 200px;
-  margin: 8px auto 24px;
-  border: 1px solid #233067;
 }
 
 .contact {
@@ -433,19 +466,20 @@ main {
   transform: scale(1.050);
 }
 
-.contact-title {
-  margin: 16px 0 8px 0;
-  font-weight: 800;
-  font-size: 20px;
-  color: #fff;
-}
-
 .email-ico,
 .whatsapp-ico,
 .office-ico {
   color: #fff;
   margin-bottom: 24px;
   font-size: 25px;
+}
+
+
+.contact-title {
+  margin: 16px 0 8px 0;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
 }
 
 .contact-info {
@@ -464,8 +498,7 @@ main {
 
 }
 
-
-
+/* footer-style */
 footer {
   position: relative;
   bottom: 0;
@@ -478,8 +511,9 @@ footer {
   font-size: 16px;
 }
 
-/* Large devices (desktops) */
+/* <1024px */
 @media only screen and (max-width: 1024px) {
+  /* about-page-style */
   .profile-side .profile-name {
     font-size: 50px;
   }
@@ -489,18 +523,26 @@ footer {
     height: auto;
   }
 
-.ui-project {
-  width: 250px;
-  margin: 0;
-}
+  /* project-page-style */
+  .ui-project {
+    width: 250px;
+    margin: 0;
+  }
+
+  .project-desc {
+    height: 130px;
+  }
+
+  /* certificate-page-style */
   .certif-img {
     width: 250px;
     margin: auto;
   }
 }
 
-/* Large devices (laptops) */
+/* <992px */
 @media only screen and (max-width: 992px) {
+  /* about-page-style */
   .profile-side .profile-name {
     font-size: 40px;
   }
@@ -510,55 +552,75 @@ footer {
     height: auto;
   }
 
-  .project{
+  /* project-page-style */
+  .project {
     width: 700px;
     margin: 64px auto;
   }
-  .certificate {
-    align-items: center;
-    width: 700px;
+  
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
+    margin: 0 16px;
+    width: 200px;
+
   }
 
   .project-name {
     font-size: 20px;
   }
-.project-desc {
-  height: 150px;
-}
+
+  .ui-project {
+    width: 200px;
+  }
+
+
+  .project-desc {
+    height: 160px;
+  }
+
+  /* certificate-page-style */
+  .certificate {
+    align-items: center;
+    width: 700px;
+  }
+
   .certif-name {
     font-size: 16px;
   }
-  .project1, .project2, .project3, .project4, .project5, .project6 {
-    margin: 0 16px;
-    width: 200px;
+
  
- }
-  .ui-project{
-    width: 200px;
-  }
   .certif-img {
     width: 200px;
   }
 
+  /* contact-page-style */
   .email-contact,
   .whatsapp-contact,
   .office-contact {
-    margin: 32px 12px ;
+    margin: 32px 12px;
   }
+
   .contact-title {
-    font-size:16px;
+    font-size: 16px;
   }
+
   .contact-info {
     font-size: 12px;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* <768px */
 @media only screen and (max-width: 768px) {
+  /* main-style */
   main {
     margin-top: 0;
   }
 
+  /* navbar-style */
   .navbar {
     z-index: 1;
   }
@@ -576,11 +638,6 @@ footer {
     display: block;
   }
 
-  .nav-item,
-  .nav-link {
-    text-align: center;
-    background-color: #233067;
-  }
 
   .nav-item {
     padding: 16px;
@@ -588,6 +645,13 @@ footer {
     display: none;
   }
 
+  .nav-item,
+  .nav-link {
+    text-align: center;
+    background-color: #233067;
+  }
+
+  /* home-page-style */
   .home-page {
     display: block;
     text-align: center;
@@ -613,54 +677,65 @@ footer {
     margin: 64px auto;
   }
 
+  /* tech/skills-page-style */
   .tech {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     width: 100%;
   }
 
-  .project{
+  .project {
     display: block;
     margin: 64px auto;
     width: 420px;
   }
-.project-desc {
-  height: 100px;
-}
-  .project1, .project2, .project3, .project4, .project5, .project6 {
+
+  .project-desc {
+    height: 100px;
+  }
+
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
     margin: 64px auto;
     width: 375px;
     height: 650px;
- }
-  .ui-project{
+  }
+
+  .ui-project {
     width: 375px;
   }
 
-
-
-  
   .project-name {
     font-size: 25px;
     margin-bottom: 32px;
   }
 
+  /* certificate-page-style */
   .certif-name {
     font-size: 20px;
     margin-bottom: 16px;
   }
+
   .certificate {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     margin-top: 64px;
   }
+
   .certif-img {
     width: 250px;
   }
 
-   .contact {
+  /* contact-page-style */
+  .contact {
     display: block;
     margin: 0 32px;
   }
+
   .email-contact,
   .whatsapp-contact,
   .office-contact {
@@ -670,8 +745,10 @@ footer {
 
 
 
-
+/* <600 */
 @media only screen and (max-width: 600px) {
+
+  /* about-page-style */
   .profile-side .profile-name {
     font-size: 10vw;
   }
@@ -685,25 +762,35 @@ footer {
     height: auto;
   }
 
+  /* skills/tech-page */
   .tech {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     width: 100%;
   }
+
   .certificate {
     display: block;
     width: 100%;
   }
-  .certif1, .certif2, .certif3, .certif4, .certif5,.certif6 {
+
+  .certif1,
+  .certif2,
+  .certif3,
+  .certif4,
+  .certif5,
+  .certif6 {
     margin-bottom: 64px;
   }
+
   .certif-img {
     width: 300px;
   }
 }
 
-
+/* <450px */
 @media only screen and (max-width: 450px) {
+  /* about-page-style */
   .profile-side .profile-name {
     font-size: 7vw;
   }
@@ -712,6 +799,7 @@ footer {
     font-size: 16px;
   }
 
+  /* tech/skills-page-style */
   .tech {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -722,35 +810,50 @@ footer {
     width: 60px;
   }
 
-  .certificate {
-    width: 250px;
-
-  }
-
-  .project{
+  /* project-page-style */
+  .project {
     width: 100%;
   }
 
-  .project1, .project2, .project3, .project4, .project5, .project6 {
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
     width: 275PX;
     height: 650px;
- }
-  .ui-project{
+  }
+
+  .ui-project {
     width: 275px;
   }
 
+  .project-desc {
+    height: 170px;
+  }
+  /* .certificate {
+    width: 250px;
+
+  } */
+
+  /* certificate-page-style */
   .certificate {
     display: block;
     width: 100%;
   }
+
   .certif-img {
     width: 250px;
   }
+
+  /* contact-page-style */
   .contact-page .sub-title {
     width: auto;
     margin: 0 64px 16px 64px;
   }
 
+  /* footer-style */
   footer {
     font-size: 12px;
   }
