@@ -318,6 +318,7 @@ main {
   color: #fff;
   text-align: left;
   margin: 0 16px 32px 16px;
+  height: 120px;
 }
 .project-link {
   padding: 8px 16px;
@@ -521,7 +522,9 @@ footer {
   .project-name {
     font-size: 20px;
   }
-
+.project-desc {
+  height: 150px;
+}
   .certif-name {
     font-size: 16px;
   }
@@ -621,7 +624,9 @@ footer {
     margin: 64px auto;
     width: 420px;
   }
-
+.project-desc {
+  height: 100px;
+}
   .project1, .project2, .project3, .project4, .project5, .project6 {
     margin: 64px auto;
     width: 375px;
