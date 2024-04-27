@@ -1,4 +1,4 @@
-/* font-family QuickSand */
+ /* font-family QuickSand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* selector all-page */
@@ -86,9 +86,11 @@ body {
 
 /* main-styles */
 main {
-position: relative;
-top:100px;
+  position: relative;
+  top: 0;
+  padding-top: 100px;
 }
+
 
 .reveal {
   position: relative;
@@ -352,7 +354,7 @@ top:100px;
 .certificate {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 850px;
+  width: 950px;
   margin: 0 auto;
 }
 
@@ -502,7 +504,7 @@ top:100px;
 /* footer-style */
 footer {
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   background-color: #233067;
   margin-top: 64px auto;
   text-align: center;
@@ -618,7 +620,9 @@ footer {
 @media only screen and (max-width: 768px) {
   /* main-style */
   main {
-    margin-top: 0;
+    position: relative;
+    top: 0;
+    padding-top: 100px;
   }
 
   /* navbar-style */
