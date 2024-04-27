@@ -1,4 +1,4 @@
- /* font-family QuickSand */
+/* font-family QuickSand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* selector all-page */
@@ -39,6 +39,9 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
+  box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.5);
 }
 
 .navbar-menu {
@@ -347,7 +350,6 @@ main {
   border: 1px solid #4aadff;
 }
 
-
 .certificate {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -371,7 +373,7 @@ main {
 .certif4,
 .certif5,
 .certif6 {
-  margin: 16px 0 32px 0;
+  margin: 16px 16px 32px 16px;
 }
 
 .certif-name {
@@ -407,7 +409,7 @@ main {
 /* contact-page-style */
 .contact-page {
   text-align: center;
-  padding: 96px 0;
+  padding: 96px 0 64px 0;
   background-color: #b0c5fe;
 }
 
@@ -623,6 +625,7 @@ footer {
   /* navbar-style */
   .navbar {
     z-index: 1;
+
   }
 
   .navbar-menu {
